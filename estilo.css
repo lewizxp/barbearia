@@ -1,7 +1,7 @@
 body{
     background-color: #F5D849;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
-    font-size:10pt ;
+    font-size:18px ;
 }
 #logo{
     text-align: center;
@@ -17,17 +17,23 @@ h1{
 .links {
     text-align: center;
     margin-top: 10px;
+    padding-left:60px ;
    
 }
 .links a{
     font-size: 17px;
     text-decoration: none;
     color: cornflowerblue;
-    background-color: blanchedalmond;
+    background-color: white;
     padding: 20px;
     width: 80%;
     display: block;
+    border-radius: 10px;
 }
+.links a:hover{
+    background-color:#E0A02B ;
+}
+
 .links img{
 height: 30px;
 
