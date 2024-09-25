@@ -1,20 +1,21 @@
-*{
-    margin :0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
-
-    background-image: url("../imagens/barbershop-1612726_1280.jpg") ;
-    background-position: center;
-    background-size:cover ;
-    min-height: 400px;
-    height: 100%;
-    position: relative ;
-    
+body {
+    font-family: Arial, sans-serif;
 }
 
+header {
+    background-image: url(../linktree/img/barber-background.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    position: relative;
+    /* padding-top: 20px; */
+}
 
 .navbar {
     width: 100%;
@@ -29,11 +30,11 @@ header{
 .nav-links {
     list-style: none;
     display: flex;
-    justify-content: flex-start; 
+    justify-content: flex-start;
 }
 
 .nav-links li {
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
 .nav-links a {
@@ -47,7 +48,6 @@ header{
 .nav-links a:hover {
     background-color: red;
     border-radius: 5px;
-    transition: 0.5deg;
 }
 
 .logo img {
@@ -56,6 +56,37 @@ header{
     border-radius: 50%;
     border: solid 4px white;
 }
-.header-container{
+
+.navbox {
+    background-color: rgba(0, 0, 0, 0.53);
+}
+
+.header-content {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 100%;
+    min-height: 400px;
+}
+
+.header-title,
+header .logo {
+    margin: 50px 25px;
+}
+
+.header-title {
+    font-size: 24px;
+    max-width: 400px;
+}
+
+.header-title h1 {
+    font-size: 36px;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    min-width: 360px;
+    max-width: 1280px;
 }
