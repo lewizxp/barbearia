@@ -90,10 +90,49 @@ header .logo {
 .header-title h1 {
     font-size: 36px;
 }
-
-.container {
-    margin: auto;
-    width: 100%;
-    min-width: 360px;
-    max-width: 1280px;
+.contact{
+    display: flex;
+   
 }
+.contact-map,
+.contact-form{
+     width: 50%;
+    padding: 40px;
+}
+.bg-yellow{
+  background-color: var(--yellow);
+}
+ .form-group{
+    width: 100%;
+    padding:5px ;
+    
+}
+form .form-group input,
+.form-group select,
+.form-group textarea
+{
+    padding: 8px;
+    width: 100%;
+    border-radius: 8px;
+
+}
+.form-group button{
+    background-color: var(--black) ;
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 2;
+}
+.form-group button:hover{
+    opacity: 1;
+    background-color: var(--yellow);
+}
+.right{
+    display: flex;
+    justify-content: end;
+   
+}
+
+
+
