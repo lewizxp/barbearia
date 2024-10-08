@@ -208,3 +208,14 @@ form .form-group input,
     transform: translateY(0px);
 } */
 
+.container-hora{
+    width: 500px;
+    height: 100px;
+
+}
+.img-hora{
+    width: 100%;
+    height: 50px;
+
+
+}
