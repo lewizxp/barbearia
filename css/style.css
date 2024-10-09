@@ -208,14 +208,22 @@ form .form-group input,
     transform: translateY(0px);
 } */
 
-.container-hora{
-    width: 500px;
-    height: 100px;
+.container-agendamento{
+    width: 100%;
+    height: 400px;
+    background-color: var(--yellow);
+
 
 }
-.img-hora{
-    width: 100%;
-    height: 50px;
+.img-agendamento{
+ background-image: url(//imagens/barber-fundo.jpg);
+    object-fit: cover;
+  display: block;
+    width: 50px;
 
 
+}
+.p-agendamento{
+    display: flex;
+  text-align: bottom;
 }
