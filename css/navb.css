@@ -1,26 +1,24 @@
 .navbar {
-   
     width: 100%;
     display: flex;
     align-items: flex-start;
-    padding:  20px;
-    position: sticky;
+    padding: 20px;
     flex-direction: row;
-    background-color:  var(--shadow);
     justify-content: space-around;
-    top: 0;
+    background-color: var(--shadow);
+    position: sticky;
+    top: 0
 }
 
 .nav-links {
-    padding-top: 30px ;
     list-style: none;
     display: flex;
     justify-content: flex-start;
 }
 
-/*.nav-links li {
+/* .nav-links li {
     margin-right: 20px;
-}*/
+} */
 
 .nav-links a {
     text-decoration: none;
@@ -35,10 +33,5 @@
     border-radius: 5px; */
     color: var(--yellow);
     border-bottom: solid 2px var(--yellow);
-    transition:  0.3s ease;
-}
-
-
-.navbox {
-    background-color: var(--shadow);
+    transition: 0.3s ease;
 }

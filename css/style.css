@@ -1,19 +1,12 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "./form.css";
 
-body {
-    font-family: Arial, sans-serif;
-}
 
 header {
     background-image: url(../linktree/img/barber-background.jpg);
     background-position: center;
     background-size: cover;
     min-height: 400px;
-    position: relative;
+
     /* padding-top: 20px; */
 }
 
@@ -21,10 +14,12 @@ header {
     height: 250px;
     width: 250px;
     border-radius: 50%;
-    border: solid 4px  var(--white);
+    border: solid 4px var(--white);
 }
 
-
+.navbox {
+    background-color: var(--shadow);
+}
 
 .header-content {
     display: flex;
@@ -48,49 +43,63 @@ header .logo {
 .header-title h1 {
     font-size: 36px;
 }
-.contact{
-    display: flex;
-   
-}
-.contact-map,
-.contact-form{
-     width: 50%;
-    padding: 40px;
-}
-.bg-yellow{
-  background-color: var(--yellow);
-}
- .form-group{
-    width: 100%;
-    padding:5px ;
-    
-}
-form .form-group input,
-.form-group select,
-.form-group textarea
-{
-    padding: 8px;
-    width: 100%;
-    border-radius: 8px;
 
+/* Area de contato */
+.contact {
+    display: flex;
 }
-.form-group button{
-    background-color: var(--black) ;
-    color: var(--white);
-    padding: 5px 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    opacity: 2;
+
+.contact-map,
+.contact-form {
+    padding: 40px;
+    width: 50%;
 }
-.form-group button:hover{
-    opacity: 1;
-    background-color: var(--yellow);
+
+
+
+.left {
+    /* text-align: left; */
+    /* float: left; */
+    display: flex;
+    justify-content: start;
 }
-.right{
+
+.right {
+    /* text-align: right; */
+    /* float: right; */
     display: flex;
     justify-content: end;
-   
 }
+
+
+.menu-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    padding: 20px;
+
+}
+
+.menu-itens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 15px;
+    width: 33.33%;
+}
+
+.menu-itens img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 2px var(--yellow);
+}
+
+
 
 /* Servicos */
 .card-container {
@@ -116,10 +125,17 @@ form .form-group input,
     overflow: hidden;
 }
 
-.card img {
+.card-img {
+    width: 100%;
+    height: 300px;
+}
+
+.card-img img {
+    height: 100%;
     width: 100%;
     display: block;
     margin: auto;
+    object-fit: cover;
 }
 
 .card-content {
@@ -145,7 +161,7 @@ form .form-group input,
 } */
 
 .card-content h2 {
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 15px;
 }
 
@@ -166,61 +182,37 @@ form .form-group input,
     transform: translateY(0px);
 } */
 
-.container-agendamento{
-    background-color: var(--yellow);
-    height: 300px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  
-    
-}
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+@media (max-width:768px) {
+    .header-content {
+        flex-direction: column-reverse;
+    }
 
-.container-agendamento {
-    background-image: url('//imagens/barber-fundo.jpg'); 
-    background-size: cover;
-    background-position: center;
-    height:500px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    justify-content: end; 
-    align-items: normal;
-    color: var(--black);
+    .header-title,
+    header .logo {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-map,
+    .contact-form {
+        padding: 40px;
+        width: 100%;
+    }
+
 }
 
-.h1-agendamento {
-    font-size: 3rem;
-    margin-bottom: 20px;
+@media print {
+    img {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
 }
-
-.p-agendamento {
-    font-size: 1.2rem;
-    max-width: 500px;
-    text-align: center;
-}
-
-.button-agendamento {
-
-   width: 70px;
-    background-color: var(--black) ;
-    color: var(--white);
-    padding: 5px 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    opacity: 2;
-   
-
-   
-    
-    
-}
-
-
-
-
