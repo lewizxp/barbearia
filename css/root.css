@@ -27,6 +27,7 @@ a {
 }
 body {
   font-size: var(--font-secondary);
-  font-family: var(--font-primary)
+  font-family: var(--font-primary);
+  margin-top :64px
 }
 

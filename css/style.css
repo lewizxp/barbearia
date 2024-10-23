@@ -2,7 +2,7 @@
 
 
 header {
-    background-image: url(../linktree/img/barber-background.jpg);
+    background-image: url(..//linktree/img/barbershop-logo-2.jpg);
     background-position: center;
     background-size: cover;
     min-height: 400px;
@@ -47,12 +47,15 @@ header .logo {
 /* Area de contato */
 .contact {
     display: flex;
+    justify-content: space-evenly;
 }
 
 .contact-map,
 .contact-form {
-    padding: 40px;
+    padding: 50px;
     width: 50%;
+    background-color: var(--yellow) ;
+
 }
 
 
@@ -83,6 +86,7 @@ header .logo {
 }
 
 .menu-itens {
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -207,12 +211,3 @@ header .logo {
 
 }
 
-@media print {
-    img {
-        display: none;
-    }
-
-    .contact {
-        display: none;
-    }
-}
