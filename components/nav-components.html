@@ -1,11 +1,7 @@
-navBarComponemt()
 
-function navBarComponemt(){
-    const element = document.getElementById(`navbar-component`)
-    const navbar =  
     <nav class="navbar navbar-expand-lg fixed-top ">
         <div class="container">
-            /*<a class="navbar-brand" href="#">Navbar</a>*/
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
            
             
             <button class="navbar-toggler bg-yellow" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -29,34 +25,11 @@ function navBarComponemt(){
                 </ul>
 
                 <ul class="navbar-nav ">
-                     <li  class="nav-item">
-                            <a class="nav-link "  href= "login.html">Login </a>
-                     </li>
-                    
-                    
+                    <li class="nav-item">
+                        <a class="nav-link "  href= "login.html">Login</li></a>
+                    </li>
                 </ul>
 
             </div>
         </div>
     </nav>
-
-element.innerHTML= navbar
-}
-function navBarComponent (){
- const element = document.getElementById ("nav-component")
- const navbar =`
- `
-}
-function navBarComponentTemplate(){
-    const element = document.getElementById( "nav-component")
-    fetch ("../components/nav-component.html")
-    .then ( (res)=> res.text())
-    .then((nav) => {
-        element.innerHTML - nav
-    })
-    .catch((error) => {
-          console.log("erro ao montar a navbar:", error);
-    })
-}
-
-
