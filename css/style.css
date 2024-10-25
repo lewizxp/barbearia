@@ -86,11 +86,11 @@ header .logo {
 }
 
 .menu-itens {
-    margin: auto;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 1px;
     color: white;
     font-size: 15px;
     width: 33.33%;
