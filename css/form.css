@@ -34,7 +34,3 @@
 .form-control:focus {
     box-shadow: 0 0 5px 5px var(--black);
 }
- form .bg-yellow container{
-    margin: 20px;
-    border-radius:20px ;
-}
