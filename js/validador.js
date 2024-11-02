@@ -47,7 +47,7 @@ function validartel(){
         const value = e.target.value
         console.log(value)
         let error = ''
-        const regexTel = (/^[0-9]+$/g)
+        const regexTel = (/^[0-9] {2,3}+$/g)
         if(!regexTel.test(value)){
             error = 'valor invalido'
         }
