@@ -1,4 +1,4 @@
-import { validateEmail, validateName, validatePassword, validateTel } from './service/validator.js'
+import { validateEmail, validateName, validatePassword, validateTel } from './service/validador.js'
 import { navBarComponentTemplate } from "./../components/nav-component/nav-component.js"
 
 navBarComponentTemplate()
@@ -6,6 +6,7 @@ validateName()
 validateEmail()
 validateTel()
 validatePassword()
+CardComponent()
 
 //Função para pegar os elementos
 function getElement(elementSelector) {
