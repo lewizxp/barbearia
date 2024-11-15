@@ -1,0 +1,31 @@
+[
+      
+    
+    {
+    "nome":"lavagem curta",
+    "valor": 15.00,
+    "descricao": "lavagem para cabelos curtos",
+    "fotos" : "imagens/barber-logo.jpg"
+
+},
+{
+    "nome":"lavagem media",
+    "valor": 20.00,
+    "descricao": "lavagem para cabelos curtos",
+    "fotos" : "imagens/barber-logo.jpg"
+
+},
+{
+    "nome":"lavagem longa",
+    "valor": 35.00,
+    "descricao": "lavagem para cabelos curtos",
+    "fotos" : "imagens/barber-logo.jpg"
+
+}
+
+
+
+
+
+
+]

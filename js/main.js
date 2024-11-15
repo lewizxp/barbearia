@@ -1,5 +1,6 @@
 import { validateEmail, validateName, validatePassword, validateTel } from './service/validador.js'
 import { navBarComponentTemplate } from "./../components/nav-component/nav-component.js"
+import{CardComponent} from "./../components/card-componet/card-component"
 
 navBarComponentTemplate()
 validateName()
