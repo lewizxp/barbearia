@@ -1,26 +1,29 @@
-import { validateEmail, validateName, validatePassword, validateTel } from '../service/validador.js'
-import {Person} from "../domain/Person"
+import { validateEmail, validateName, validatePassword, validateTel } from '../service/validator.js'
+import { Person } from "../domain/Person.js"
+import {personService} from "../service/person.service.js"
 
 validateName()
 validateEmail()
 validateTel()
-validatePassword() 
-function getPerson(){
-const person = new Person()
-person.name = document.querySelector("#nameInput").value
-person.phone = document.querySelector ("#telInput").value
-person.email = document.querySelector("#emailInput").value
-person.password = document.querySelector("#passwordInput").value
+validatePassword()
 
-return person
+submitForm()
 
+function getFormPerson() {
+    const person = new Person()
+    person.name = document.querySelector("#nameInput").value
+    person.email = document.querySelector("#emailInput").value
+    person.phone = document.querySelector("#telInput").value
+    person.password = document.querySelector("#passwordInput").value
+    return person
 }
 
 function submitForm() {
-    const buttonSubmit = document.querySelector("sumbitForm")
-    buttonSubmit.addEventListener("click",() => {
+    const buttonSubmit = document.querySelector("#submitForm")
+    buttonSubmit.addEventListener("click", () => {
         const person = getFormPerson()
-        console.log (person)
+        console.log(person)
+        personService.add(person)
+    })
 
-})
 }
