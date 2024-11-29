@@ -1,12 +1,19 @@
-import { setPerson } from "../infra/person.repository.js"
+import { addPerson } from "../infra/person.repository.js"
 
 export const personService = {
     add
    }
    
    function add(person){
-   
-   }
-   function add (person){
-    setPerson
-   }
+   addPerson(person)
+   .then(res=>{
+console.log("adicionado:",res)
+alert("adicionado com sucessso")
+   })
+
+   .catch(error=> {
+    console.log("error",res)
+    alert("error")
+
+   })
+}

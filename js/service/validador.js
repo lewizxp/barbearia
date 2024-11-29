@@ -1,6 +1,4 @@
 
-
-
 export function validateName() {
     const element = document.querySelector("#nameInput")
     const message = document.querySelector("#nameHelp")
