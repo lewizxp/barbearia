@@ -1,40 +1,4 @@
 
-export function validateName() {
-    const element = document.querySelector("#nameInput")
-    const message = document.querySelector("#nameHelp")
-    if (!element) return
-    element.addEventListener('blur', (e) => {
-        const value = e.target.value
-        console.log(value)
-        let content = ''
-        if (value == '') {
-            content = '<span class="text-danger"> Nome invalido ou embranco </span>'
-            //message.innerHTML = '<span class="text-danger"> Nome invalido ou embranco </span>'
-        }
-        message.innerHTML = content
-        // else {
-        //     message.innerHTML = ''
-        // }
-    })
-}
-
-export function validateEmail() {
-    const element = document.querySelector("#emailInput")
-    const message = document.querySelector("#emailHelp")
-    if (!element) return
-    element.addEventListener('keyup', (e) => {
-        const value = e.target.value
-        console.log(value)
-        let error = ''
-        //if (value.indexOf('@') === -1 || value.indexOf('.') === -1) {
-        const regexEmail = (/^[a-z0-9]+\@[a-z]+\.([a-z]{3})+$/g)
-        if (!regexEmail.ma(value)) {
-            error = "E-mail invalido"
-        }
-        message.innerHTML = error
-    })
-}
-
 export function validateTel() {
     //const element = getElement("#telInput")
     const element = document.querySelector("#telInput")
